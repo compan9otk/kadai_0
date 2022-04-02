@@ -1,0 +1,363 @@
+@charset "utf-8";
+@import url("//../fontawesome-free-6.1.0-web/css/all.css");
+html{
+    font-size: 62.5%;/* 16px × 62.5% = 10px */
+}
+
+body{
+    color: #333333;
+    /* font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif; */
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-lh2{
+    line-height: 1.7;
+}
+
+.wrapper{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.en__title{
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin: 0 0 30px;
+}
+
+.ja__title{
+    font-size: 1.8rem;
+    margin: 0 0 60px;
+}
+
+/* -----------------
+    header
+*--------------- */
+.header-wrapper{
+    background: #fafafa;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border: #333;
+    width: 100%;
+    z-index: 99;
+}
+.nav-list{
+    display: flex;
+    margin-right: 40px;
+}
+.nav-item{
+    margin: 50px 50px 50px 0;
+}
+.nav-item>a{
+    color: #222222;
+}
+
+/* -----------------
+    hero-image
+*--------------- */
+.hero-image{
+    margin: auto;
+    position: relative;
+    padding: 116px 0 0;
+}
+.hero-image__text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate3d(-50%,-50%,0);
+    color: #fff;
+    font-size: 3.0rem;
+    text-align: center;
+}
+.site-phrase{
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin: 0 0 30px;
+}
+
+/* -----------------
+    about
+*--------------- */
+.intro{
+    padding: 60px 0 0;
+}
+.intro-wrapper{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.intro__title{
+    color: #ffd61a;
+}
+.intro__desc{
+    margin: 0 0 40px;
+}
+.intro__image{
+    margin: 80px 0 0;
+}
+/*===================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+    margin:0 auto;
+}
+
+.slider .slick-slide {
+    transform: scale(0.8);/*左右の画像のサイズを80%に*/
+    transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+    opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+    transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+    opacity: 1;/*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    /* text-align:center; */
+    margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+    margin:0 8px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;
+    height: 12px;
+    display:block;
+    border-style: none;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+/* -----------------
+    course
+*--------------- */
+.course{
+    padding: 60px 0 0;
+    text-align: center;
+}
+.course-wrapper{
+    width: 1366px;
+    margin: auto;
+}
+.course-desc{
+    margin: 0 0 60px;
+}
+.course__list{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-content{
+    width: 50%;
+    background-color: #fafafa;
+}
+.inner-content{
+    width: 430px;
+    text-align: left;
+    margin: 120px 0 120px 50px;
+}
+.inner-left{
+    margin: 120px 50px 120px auto;
+}
+.course-headline{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0 0 40px;
+}
+
+/* -----------------
+    news
+*--------------- */
+.news{
+    padding: 60px 0;
+}
+.news-title{
+    color: #ffd61a;
+}
+.news-wrapper{
+    text-align: center;
+}
+.news-list{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 60px;
+    text-align: left;
+}
+.news-content{
+    width: 300px;
+    margin: 0 15px;
+}
+.news-date{
+    margin: 30px 0 24px 0;
+}
+.btn-news{
+    display: block;
+    padding: 21px 0 0;
+    margin: auto;
+    height: 39px;
+}
+/* -----------------
+    access
+*--------------- */
+.access{
+    padding:60px 0 ;
+    background-color: #fafafa;
+}
+.access-wrapper{
+    text-align: center;
+}
+iframe{
+    max-width: 1366px;
+    margin: 0 0 60px;
+}
+.access-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 36%;
+    width: 40%;
+}
+.access-title{
+    width: 25%;
+    margin: 0 0 30px;
+    text-align-last: left;
+}
+.last-title{
+    margin: 0;
+}
+.access-item{
+    width: 75%;
+    text-align-last: left;
+}
+
+/* -----------------
+    contact
+*--------------- */
+.contact{
+    padding: 60px 0 140px;
+}
+.contact-wrapper{
+    width: 640px;
+    margin: auto;
+    text-align: center;
+}
+.contact__desc{
+    margin: 0 0 30px;
+}
+.contact__notes{
+    margin: 0 0 70px;
+}
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.form-title{
+    width: 159px;
+    text-align: left;
+    padding: 16px 64px 0 16px;
+    border-top: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+}
+.form-item{
+    width: 400px;
+    text-align: left;
+    border-top: 1px solid #bfbfbf;
+}
+.form-item.check-list{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+input[type*="checkbox"]{
+    margin: 12px 12px 12px 8px;
+}
+.form-parts{
+    appearance: none;
+    box-sizing: border-box;
+    width: 328px;
+    height: 36px;
+    padding: 8px;
+    margin: 8px;
+    border: solid 1px #bfbfbf;
+}
+.form-parts.select-list{
+    margin-bottom: 16px;
+}
+.form-parts.text-area{
+    height: auto;
+}
+.btn{
+    width: 300px;
+    /* height: 60px; */
+    border: none;
+    color: #707070;
+    background-color: #ffd61a;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    transform: scale(1.1, 1.1);
+    opacity: 0.6;
+  }
+.btn-contact{
+    height: 60px;
+}
+
+/* -----------------
+    footer
+*--------------- */
+.footer{
+    padding: 30px 0;
+    color: #fafafa;
+    background-color: #707070;
+}
